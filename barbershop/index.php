@@ -22,7 +22,6 @@
         while($row = $barbers->fetch_assoc()){
         ?>
         <div class="barber-card">
-            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" alt="barber">
             <h3><?php echo $row['name']; ?></h3>
         </div>
         <?php } ?>

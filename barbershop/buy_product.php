@@ -7,15 +7,17 @@ if(!isset($_SESSION['user_id'])){
 }
 
 if(isset($_GET['product'])){
-    $product = $_GET['product'];
-    $user_id = $_SESSION['user_id'];
 
-    $sql = "INSERT INTO bookings (user_id, product_name)
-            VALUES ('$user_id', '$product')";
+$product = $_GET['product'];
+$user_id = $_SESSION['user_id'];
 
-    if($conn->query($sql)){
-        header("Location: thankyou.php");
-        exit();
-    }
+$sql = "INSERT INTO bookings (user_id, product_name)
+VALUES ('$user_id','$product')";
+
+mysqli_query($conn,$sql);
+
+header("Location: thankyou.php");
+exit();
+
 }
 ?>

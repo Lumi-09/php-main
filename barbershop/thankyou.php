@@ -1,15 +1,26 @@
-<?php include "config.php"; ?>
+<?php
+session_start();
+?>
 
 <link rel="stylesheet" href="style.css">
 
-<div style="display:flex; justify-content:center; align-items:center; height:100vh; flex-direction:column;">
+<div class="navbar">
+    <h1>Elite Cuts</h1>
+</div>
 
-    <h1 style="font-size:60px; color:#d4af37;">THANK YOU!</h1>
-    <p style="font-size:20px;">Your purchase was successful.</p>
+<div class="container">
 
-    <br>
-    <a href="dashboard.php">
-        <button style="width:200px;">Back to Dashboard</button>
-    </a>
+<div class="form-box" style="text-align:center;">
+
+<h2>✅ Thank You For Your Purchase!</h2>
+<p>Your product has been ordered successfully.</p>
+
+<br><br>
+
+<a href="dashboard.php">
+<button>Back to Dashboard</button>
+</a>
+
+</div>
 
 </div>
